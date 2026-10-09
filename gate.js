@@ -17,7 +17,7 @@
     {
       path: 'v1/',
       title: 'Kingdom Apps — hotsite institucional',
-      blurb: 'One-page Realeza Digital: hero índigo com o símbolo vazado, quem somos, 3 serviços (RSVP · Recorrência · Hotsites), para quem, como funciona, versículo e CTA final. WhatsApp como contato principal e Direct como secundário.'
+      blurb: 'One-page Realeza Digital: hero índigo com o símbolo vazado, quem somos, 3 serviços (RSVP · Semear · Hotsites), para quem, como funciona, FAQ e CTA final. WhatsApp como contato principal e Direct como secundário.'
     }
   ];
 
