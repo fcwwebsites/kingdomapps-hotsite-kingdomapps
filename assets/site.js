@@ -32,6 +32,11 @@ var WA_NUMERO = '5511947904394';
     a.setAttribute('aria-label', 'Saber mais sobre o ' + NOME_DOACAO + ' pelo WhatsApp (abre em nova aba)');
   });
 
+  // WhatsApp dos Hotsites gerado a partir do nome do departamento
+  document.querySelectorAll('[data-wa="hotsite"]').forEach(function (a) {
+    a.href = wa('Olá! Vim pelo site e quero saber mais sobre os hotsites da ' + NOME_DEPARTAMENTO + '.');
+  });
+
   // WhatsApp do Selecta gerado a partir da variável
   document.querySelectorAll('[data-wa="selecta"]').forEach(function (a) {
     a.href = wa('Olá! Vim pelo site e quero saber mais sobre o ' + NOME_CONTEUDO_PAGO + '.');
