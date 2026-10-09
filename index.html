@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#16122B" />
+  <title>Kingdom Apps · Prévia protegida</title>
+  <meta name="description" content="Prévia protegida do hotsite da Kingdom Apps." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kingdom Apps — tecnologia com propósito" />
+  <meta property="og:description" content="Sistemas simples para igrejas, ministérios e negócios: RSVP, Recorrência e hotsites por assinatura. Fale com a gente pelo WhatsApp." />
+  <meta property="og:image" content="assets/og-image.png" />
+  <meta property="og:image:alt" content="Logo da Kingdom Apps sobre fundo índigo" />
+  <link rel="icon" href="assets/brand/avatar-instagram.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/fonts/manrope-800.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="gate.css" />
+</head>
+<body>
+  <main class="shell">
+    <div class="brand-row">
+      <img src="assets/brand/horizontal-negativo.svg" alt="Kingdom Apps" width="182" height="42" />
+      <span>Prévia interna de hotsite</span>
+    </div>
+
+    <!-- Bloqueado: nenhum caminho, nome de versão, link ou iframe do site aqui -->
+    <section id="lock" class="lock" aria-labelledby="lock-title">
+      <h1 id="lock-title">Prévia protegida</h1>
+      <p>Digite o código de 4 dígitos para abrir a prévia do hotsite.</p>
+      <div class="pin-display" id="pin-display" role="status" aria-live="polite" aria-label="Dígitos digitados: 0 de 4">
+        <span></span><span></span><span></span><span></span>
+      </div>
+      <div class="keypad" id="keypad" role="group" aria-label="Teclado numérico do código de acesso">
+        <button type="button" data-k="1">1</button><button type="button" data-k="2">2</button><button type="button" data-k="3">3</button>
+        <button type="button" data-k="4">4</button><button type="button" data-k="5">5</button><button type="button" data-k="6">6</button>
+        <button type="button" data-k="7">7</button><button type="button" data-k="8">8</button><button type="button" data-k="9">9</button>
+        <button type="button" data-k="del" class="ghost" aria-label="Apagar último dígito">⌫</button>
+        <button type="button" data-k="0">0</button>
+        <button type="button" data-k="ok" class="ok" aria-label="Desbloquear">OK</button>
+      </div>
+      <p class="hint">Também dá para digitar pelo teclado.</p>
+      <p class="err" id="pin-err" role="alert"></p>
+    </section>
+
+    <!-- Desbloqueado: preenchido só pelo gate.js depois do código -->
+    <section id="gallery" class="hidden" aria-labelledby="gallery-title">
+      <div class="toolbar"><button type="button" id="logout">Bloquear de novo</button></div>
+      <h1 id="gallery-title">Hotsite institucional</h1>
+      <div class="cards" id="cards"></div>
+    </section>
+
+    <footer>Prévia Kingdom Apps · somente uso interno · proposta aguardando aprovação.</footer>
+  </main>
+  <script src="gate.js"></script>
+</body>
+</html>
