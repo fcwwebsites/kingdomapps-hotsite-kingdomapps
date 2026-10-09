@@ -1,7 +1,7 @@
 /* =====================================================================
    CONFIGURAÇÃO — único ponto para trocar nomes e ligar o versículo.
    ===================================================================== */
-var NOME_RECORRENCIA = 'Semear';                    // nome do sistema de doações recorrentes (aprovado)
+var NOME_DOACAO = 'Semear';                         // sistema de doações recorrentes (final; masculino: "o Semear")
 var NOME_DEPARTAMENTO = 'Vitrine';                 // departamento de hotsites (aprovado)
 var NOME_PRODUTO_HOTSITE = 'Hotsites';              // termo genérico até a escolha do nome do plano
 var SHOW_VERSICULO = false;                         // Salmos 127:1 — true para exibir (decisão pendente)
@@ -18,16 +18,16 @@ var WA_NUMERO = '5511947904394';
   function wa(texto) { return 'https://wa.me/' + WA_NUMERO + '?text=' + enc(texto); }
 
   // Nomes provisórios
-  var NOMES = { recorrencia: NOME_RECORRENCIA, departamento: NOME_DEPARTAMENTO, hotsite: NOME_PRODUTO_HOTSITE };
+  var NOMES = { doacao: NOME_DOACAO, departamento: NOME_DEPARTAMENTO, hotsite: NOME_PRODUTO_HOTSITE };
   document.querySelectorAll('[data-nome]').forEach(function (el) {
     var v = NOMES[el.getAttribute('data-nome')];
     if (v != null) el.textContent = v;
   });
 
   // WhatsApp do sistema de doações gerado a partir da variável
-  document.querySelectorAll('[data-wa="recorrencia"]').forEach(function (a) {
-    a.href = wa('Olá! Vim pelo site e quero saber mais sobre ' + NOME_RECORRENCIA + '.');
-    a.setAttribute('aria-label', 'Saber mais sobre a ' + NOME_RECORRENCIA + ' pelo WhatsApp (abre em nova aba)');
+  document.querySelectorAll('[data-wa="doacao"]').forEach(function (a) {
+    a.href = wa('Olá! Vim pelo site e quero saber mais sobre o ' + NOME_DOACAO + '.');
+    a.setAttribute('aria-label', 'Saber mais sobre o ' + NOME_DOACAO + ' pelo WhatsApp (abre em nova aba)');
   });
 
   // Versículo opcional
