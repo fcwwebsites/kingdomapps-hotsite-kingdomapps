@@ -2,7 +2,7 @@
    CONFIGURAÇÃO — único ponto para trocar nomes e ligar o versículo.
    ===================================================================== */
 var NOME_RECORRENCIA = 'Recorrência';               // nome PROVISÓRIO do produto de doações
-var NOME_DEPARTAMENTO = '[NOME DO DEPARTAMENTO]';   // departamento de hotsites (sem nome ainda)
+var NOME_DEPARTAMENTO = 'Vitrine';                 // departamento de hotsites (aprovado)
 var NOME_PRODUTO_HOTSITE = 'Hotsites';              // termo genérico até a escolha do nome do plano
 var SHOW_VERSICULO = false;                         // Salmos 127:1 — true para exibir (decisão pendente)
 var WA_NUMERO = '5511947904394';
