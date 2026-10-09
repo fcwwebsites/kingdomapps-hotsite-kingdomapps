@@ -3,7 +3,9 @@
    ===================================================================== */
 var NOME_DOACAO = 'Semear';                         // sistema de doações recorrentes (final; masculino: "o Semear")
 var NOME_DEPARTAMENTO = 'Vitrine';                 // departamento de hotsites (aprovado)
+var NOME_CONTEUDO_PAGO = 'Selecta';                 // conteúdo liberado só depois do pagamento (masculino: "o Selecta")
 var NOME_PRODUTO_HOTSITE = 'Hotsites';              // termo genérico até a escolha do nome do plano
+var SHOW_SELECTA_EXEMPLO = true;                    // botão "Ver exemplo" do Selecta (false remove; aguarda confirmação do Feijão)
 var SHOW_VERSICULO = false;                         // Salmos 127:1 — true para exibir (decisão pendente)
 var WA_NUMERO = '5511947904394';
 /* ===================================================================== */
@@ -18,7 +20,7 @@ var WA_NUMERO = '5511947904394';
   function wa(texto) { return 'https://wa.me/' + WA_NUMERO + '?text=' + enc(texto); }
 
   // Nomes provisórios
-  var NOMES = { doacao: NOME_DOACAO, departamento: NOME_DEPARTAMENTO, hotsite: NOME_PRODUTO_HOTSITE };
+  var NOMES = { doacao: NOME_DOACAO, departamento: NOME_DEPARTAMENTO, hotsite: NOME_PRODUTO_HOTSITE, selecta: NOME_CONTEUDO_PAGO };
   document.querySelectorAll('[data-nome]').forEach(function (el) {
     var v = NOMES[el.getAttribute('data-nome')];
     if (v != null) el.textContent = v;
@@ -28,6 +30,18 @@ var WA_NUMERO = '5511947904394';
   document.querySelectorAll('[data-wa="doacao"]').forEach(function (a) {
     a.href = wa('Olá! Vim pelo site e quero saber mais sobre o ' + NOME_DOACAO + '.');
     a.setAttribute('aria-label', 'Saber mais sobre o ' + NOME_DOACAO + ' pelo WhatsApp (abre em nova aba)');
+  });
+
+  // WhatsApp do Selecta gerado a partir da variável
+  document.querySelectorAll('[data-wa="selecta"]').forEach(function (a) {
+    a.href = wa('Olá! Vim pelo site e quero saber mais sobre o ' + NOME_CONTEUDO_PAGO + '.');
+    a.setAttribute('aria-label', 'Saber mais sobre o ' + NOME_CONTEUDO_PAGO + ' pelo WhatsApp (abre em nova aba)');
+  });
+
+  // Botão "Ver exemplo" do Selecta (opcional)
+  document.querySelectorAll('[data-selecta-exemplo]').forEach(function (a) {
+    if (!SHOW_SELECTA_EXEMPLO) { a.remove(); return; }
+    a.setAttribute('aria-label', 'Ver um exemplo do ' + NOME_CONTEUDO_PAGO + ' (abre em nova aba)');
   });
 
   // Versículo opcional

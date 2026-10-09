@@ -104,8 +104,9 @@ h4{font:700 .75rem/1.3 var(--fb);letter-spacing:.14em;text-transform:uppercase;c
 .svc-index small{color:var(--muted);font-size:.88rem}
 .svc-index-ico,.svc-ico,.aud-ico{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--indigo);color:var(--ouro)}
 .svc-index-ico svg,.svc-ico svg,.aud-ico svg{width:24px;height:24px}
-@media (min-width:880px){.svc-index{grid-template-columns:repeat(3,1fr)}}
-.svc-list{display:grid;gap:1.5rem}
+@media (min-width:640px){.svc-index{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1100px){.svc-index{grid-template-columns:repeat(4,1fr)}}
+.svc-list{display:grid;gap:1.5rem;align-items:stretch}
 .svc{display:grid;gap:1.8rem;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:clamp(1.5rem,4vw,2.5rem);scroll-margin-top:calc(var(--h) + 16px)}
 .svc-meta{display:flex;align-items:center;justify-content:space-between;margin-bottom:1.2rem}
 .svc-num{font:800 2.6rem/1 var(--fh);color:transparent;-webkit-text-stroke:1.5px var(--lavanda)}
@@ -134,12 +135,11 @@ h4{font:700 .75rem/1.3 var(--fb);letter-spacing:.14em;text-transform:uppercase;c
 .svc-feature .svc-num{-webkit-text-stroke-color:rgba(232,176,75,.55)}
 .svc-feature .ticks li::before{border-color:var(--ouro)}
 .svc-feature .mini-steps li::before{background:var(--ouro);color:var(--noite)}
-@media (min-width:960px){
-  .svc{grid-template-columns:minmax(260px,.8fr) 1.6fr;gap:3rem}
-  .svc-body{grid-template-columns:1fr 1fr;gap:1.6rem 2rem}
-  .svc-problem{grid-column:1/-1}
-  .svc-head{position:sticky;top:calc(var(--h) + 24px);align-self:start}
+@media (min-width:720px){
+  .svc-list{grid-template-columns:repeat(2,1fr);gap:1.5rem}
+  .svc{align-content:start}
 }
+
 
 /* Para quem */
 .audience{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
@@ -212,3 +212,10 @@ h4{font:700 .75rem/1.3 var(--fb);letter-spacing:.14em;text-transform:uppercase;c
 .wa-float:hover{transform:translateY(-2px) scale(1.02)}
 @media (max-width:520px){.wa-float{width:58px;height:58px;padding:0;justify-content:center}.wa-float span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 .menu-open .wa-float{display:none}
+
+/* Selecta: dois CTAs */
+.svc-ctas{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn-outline{border-color:var(--indigo);color:var(--indigo);background:transparent}
+.btn-outline:hover{background:var(--indigo);color:#fff}
+.btn-outline .ico{width:1em;height:1em}
+.interim-tag{background:#FFE7D9;color:#6A2A00}
