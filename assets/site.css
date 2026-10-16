@@ -6,7 +6,7 @@
   --r:20px;--wrap:1160px;--h:72px;
   --fh:"Manrope",system-ui,sans-serif;--fb:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
 }
-html.gated body{visibility:hidden}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:calc(var(--h) + 12px)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}

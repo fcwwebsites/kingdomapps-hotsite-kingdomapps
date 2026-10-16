@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kingdomapps.net/sitemap.xml

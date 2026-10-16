@@ -1,8 +1,7 @@
-# Kingdom Apps — prévia do hotsite institucional
+# Kingdom Apps — hotsite institucional
 
-Proposta interna, ainda não aprovada. A página raiz é um gate protegido por código de acesso; depois do desbloqueio mostra a prévia do hotsite (`/v1/`).
+Site público em https://kingdomapps.net/ (domínio próprio via `CNAME`). `/v1/` redireciona para a raiz.
 
-- Gate: https://fcwwebsites.github.io/kingdomapps-hotsite-kingdomapps/
 - Site estático (HTML/CSS/JS), identidade "Realeza Digital" (SVGs em `assets/brand/`), fontes Manrope 800 e Inter (OFL) hospedadas em `assets/fonts/`.
 
 ## Pontos de troca (um só lugar: `assets/site.js`, topo do arquivo)

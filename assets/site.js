@@ -60,7 +60,7 @@ var WA_NUMERO = '5511947904394';
   // Formulário de interesse (opcional): carrega assets/form.js só quando ligado e com endpoint
   if (SHOW_FORM && FORM_ENDPOINT) {
     window.KA_FORM = { endpoint: FORM_ENDPOINT, servicos: ['RSVP', NOME_DOACAO, NOME_PRODUTO_HOTSITE + ' da ' + NOME_DEPARTAMENTO, NOME_CONTEUDO_PAGO] };
-    var fs = document.createElement('script'); fs.src = '../assets/form.js'; fs.defer = true; document.body.appendChild(fs);
+    var fs = document.createElement('script'); fs.src = 'assets/form.js'; fs.defer = true; document.body.appendChild(fs);
   }
 
   // Versículo opcional
