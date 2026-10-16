@@ -11,6 +11,7 @@ Proposta interna, ainda não aprovada. A página raiz é um gate protegido por c
 - `NOME_PRODUTO_HOTSITE` — termo genérico "Hotsites"
 - `NOME_CONTEUDO_PAGO` — nome do serviço de conteúdo pago, "Selecta" (link de WhatsApp gerado a partir dele)
 - `SHOW_SELECTA_EXEMPLO` — `false` remove o botão "Ver exemplo" do Selecta
-- `SHOW_VERSICULO` — `true` exibe a seção Salmos 127:1 (padrão `false`)
+- `SHOW_VERSICULO` — exibe a seção Salmos 127:1 (ligado)
+- `SHOW_FORM` / `FORM_ENDPOINT` — formulário de interesse (desligado até existir o endpoint do Apps Script)
 
 Pages: branch `main`, pasta `/`. Prévia local: `python3 -m http.server 8765`.
