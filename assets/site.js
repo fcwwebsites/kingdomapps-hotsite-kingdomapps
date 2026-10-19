@@ -7,8 +7,8 @@ var NOME_CONTEUDO_PAGO = 'Selecta';                 // conteúdo liberado só de
 var NOME_PRODUTO_HOTSITE = 'Hotsites';              // termo genérico até a escolha do nome do plano
 var SHOW_SELECTA_EXEMPLO = true;                    // botão "Ver exemplo" do Selecta (aprovado pelo Feijão; false remove)
 var SHOW_VERSICULO = true;                          // Salmos 127:1 (aprovado pelo Feijão; false oculta)
-var SHOW_FORM = false;                              // formulário de interesse: só aparece com SHOW_FORM = true E FORM_ENDPOINT preenchido
-var FORM_ENDPOINT = '';                             // URL /exec do Google Apps Script (web app) — vazio = formulário oculto
+var SHOW_FORM = true;                               // formulário de interesse: só aparece com SHOW_FORM = true E FORM_ENDPOINT preenchido
+var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyXJzGbnC3e3P_kqoQvF0my-eM7bEuCtrySyUmbXLilqjDgSUuds_r6vUkA8ZBm_ehS/exec';                             // URL /exec do Google Apps Script (web app) — vazio = formulário oculto
 var WA_NUMERO = '5511947904394';
 /* ===================================================================== */
 
